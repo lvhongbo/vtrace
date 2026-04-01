@@ -32,7 +32,35 @@ desk_eval/
 
 ## 快速开始
 
-### 1. 安装依赖
+### 方式一：使用 uv（推荐）
+
+本项目提供基于 [uv](https://docs.astral.sh/uv/) 的跨平台一键运行脚本，无需手动创建虚拟环境。
+
+**Linux / macOS:**
+```bash
+# 运行 ROI 标定工具
+./scripts/run_calibrator.sh
+
+# 运行 DeskEval 主程序
+./scripts/run_desk_eval.sh
+```
+
+**Windows:**
+```batch
+# 运行 ROI 标定工具
+scripts\run_calibrator.bat
+
+# 运行 DeskEval 主程序
+scripts\run_desk_eval.bat
+```
+
+脚本会自动：
+1. 检查并提示安装 uv（如果未安装）
+2. 创建 `.venv` 虚拟环境
+3. 安装 Python 依赖
+4. 启动程序
+
+### 方式二：手动安装
 
 ```bash
 cd experiments/desk_eval
