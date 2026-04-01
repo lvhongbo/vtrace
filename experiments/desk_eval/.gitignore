@@ -1,0 +1,4 @@
+*.pyc
+__pycache__/
+roi_config.json
+events_log.txt
